@@ -33,30 +33,35 @@
         android:textAllCaps="true"/>
 
     <Button
+        android:id="@+id/touchdownA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Touchdown (6)"
         android:textAllCaps="true"/>
 
     <Button
+        android:id="@+id/extraPointA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Extra Point (1)"
         android:textAllCaps="true"/>
 
     <Button
+        android:id="@+id/twoPointConvA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="two point conv. (2)"
         android:textAllCaps="true"/>
 
     <Button
+        android:id="@+id/threePointsA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="field goal (3)"
         android:textAllCaps="true"/>
 
     <Button
+        android:id="@+id/safteyPointsA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Saftey (2)"
@@ -89,30 +94,35 @@
             android:textAllCaps="true"/>
 
         <Button
+            android:id="@+id/touchdownB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Touchdown (6)"
             android:textAllCaps="true"/>
 
         <Button
+            android:id="@+id/extraPointB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Extra Point (1)"
             android:textAllCaps="true"/>
 
         <Button
+            android:id="@+id/twoPointConvB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="two point conv. (2)"
             android:textAllCaps="true"/>
 
         <Button
+            android:id="@+id/threePointsB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="field goal (3)"
             android:textAllCaps="true"/>
 
         <Button
+            android:id="@+id/safteyPointsB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Saftey (2)"

@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;
+    int scoreTeamB = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
