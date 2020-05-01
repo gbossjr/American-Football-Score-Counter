@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     tools:context=".MainActivity">
 
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -17,55 +20,60 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:text="Home Team"
-        android:textAllCaps="true"/>
+        android:textAllCaps="true"
+        android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:text="Score"
         android:textAllCaps="true"/>
 
     <TextView
+        android:id="@+id/score_Display_TeamA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="0"
+        android:textSize="60sp"
         android:textAllCaps="true"/>
 
     <Button
         android:id="@+id/touchdownA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Touchdown (6)"
-        android:textAllCaps="true"/>
+        android:onClick="touchdownTeamA"
+        style="@style/Button"/>
 
     <Button
         android:id="@+id/extraPointA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Extra Point (1)"
-        android:textAllCaps="true"/>
+        android:onClick="extraPointTeamA"
+        style="@style/Button"/>
 
     <Button
         android:id="@+id/twoPointConvA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="two point conv. (2)"
-        android:textAllCaps="true"/>
+        android:onClick="twoPointConvTeamA"
+        style="@style/Button"/>
 
     <Button
         android:id="@+id/threePointsA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="field goal (3)"
-        android:textAllCaps="true"/>
+        android:onClick="fieldGoalTeamA"
+        style="@style/Button"/>
 
     <Button
-        android:id="@+id/safteyPointsA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Saftey (2)"
-        android:textAllCaps="true"/>
+        android:id="@+id/safetyPointsA"
+        android:text="Safety (2)"
+        android:onClick="safetyTeamA"
+        style="@style/Button"/>
 
     </LinearLayout>
 
@@ -78,59 +86,73 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:text="Away Team"
-            android:textAllCaps="true"/>
+            android:textAllCaps="true"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             android:text="Score"
             android:textAllCaps="true"/>
 
         <TextView
+            android:id="@+id/score_Display_TeamB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="0"
-            android:textAllCaps="true"/>
+            android:textSize="60sp"
+            android:textAllCaps="true" />
 
         <Button
             android:id="@+id/touchdownB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Touchdown (6)"
-            android:textAllCaps="true"/>
+            android:onClick="touchdownTeamB"
+            style="@style/Button"/>
 
         <Button
             android:id="@+id/extraPointB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Extra Point (1)"
-            android:textAllCaps="true"/>
+            android:onClick="extraPointTeamB"
+            style="@style/Button"/>
 
         <Button
             android:id="@+id/twoPointConvB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="two point conv. (2)"
-            android:textAllCaps="true"/>
+            android:onClick="twoPointConvTeamB"
+            style="@style/Button"/>
 
         <Button
             android:id="@+id/threePointsB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="field goal (3)"
-            android:textAllCaps="true"/>
+            android:onClick="fieldGoalTeamB"
+            style="@style/Button"/>
 
         <Button
-            android:id="@+id/safteyPointsB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Saftey (2)"
-            android:textAllCaps="true"/>
+            android:id="@+id/safetyPointsB"
+            android:text="Safety (2)"
+            android:onClick="safetyTeamB"
+            style="@style/Button"/>
 
     </LinearLayout>
 
+   </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Reset"
+            android:onClick="resetScore"
+            android:layout_marginBottom="80dp"/>
 
 
-
-</LinearLayout>
+</RelativeLayout>
